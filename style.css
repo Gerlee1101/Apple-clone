@@ -269,3 +269,37 @@ a {
   border: 2px red solid;
   height: 100px;
 }
+.scroll-container {
+  width: 100%;
+  display: flex;
+  column-gap: 16px;
+  overflow: scroll;
+  align-items: center;
+  scrollbar-width: none;
+  scroll-behavior: smooth;
+  scroll-snap-type: mandatory;
+}
+.carousel-slide {
+  height: 668px;
+  width: 1250px;
+  color: white;
+  flex-shrink: 0;
+  font-size: 20px;
+  position: relative;
+  scroll-snap-align: center;
+  background: var(--background-image) center / cover no-repeat;
+}
+.carousel-info {
+  left: 47px;
+  bottom: 38px;
+  position: absolute;
+}
+.carousel-info-button {
+  border: none;
+  cursor: pointer;
+  font-size: 17px;
+  padding: 11px 21px;
+  margin-right: 14px;
+  border-radius: 999px;
+  background-color: #f5f5f7;
+}
