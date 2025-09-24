@@ -212,15 +212,15 @@ a {
 
 .linear-gradient-HelloAppleIntelligence {
   width: 100%;
-  background: linear-gradient(
+  color: linear-gradient(
     to right,
     #0090f7 0%,
     #ba62fc 33.33%,
     #f2416b 66.67%,
     #f55600 99%
   );
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  /* -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; */
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
@@ -264,11 +264,7 @@ a {
   border: 1px #2997ff solid;
   color: #2997ff;
 }
-.scroll {
-  width: 100%;
-  border: 2px red solid;
-  height: 100px;
-}
+
 .scroll-container {
   width: 100%;
   display: flex;
@@ -287,8 +283,11 @@ a {
   font-size: 20px;
   position: relative;
   scroll-snap-align: center;
-  background: var(--background-image) center / cover no-repeat;
+  /* background-image: var(--background-image); */
+  background-size: cover;
+  background-repeat: no-repeat;
 }
+
 .carousel-info {
   left: 47px;
   bottom: 38px;
@@ -302,4 +301,80 @@ a {
   margin-right: 14px;
   border-radius: 999px;
   background-color: #f5f5f7;
+}
+.bullets {
+  display: flex;
+  width: 100%;
+}
+.bullet {
+  width: 8px;
+  height: 8px;
+  border-radius: 4px;
+  background-color: #0000006b;
+  margin-right: 10px;
+}
+.bullet:hover {
+  background-color: black;
+}
+.slider {
+  width: 100%;
+  border: 2px red solid;
+  height: 236px;
+  display: flex;
+  column-gap: 16px;
+}
+
+.slide {
+  width: 417px;
+  height: 236px;
+  background-color: #ba62fc;
+  flex-shrink: 0;
+  position: relative;
+}
+.slide-description {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 18px;
+  letter-spacing: -0.22px;
+  position: absolute;
+  top: 109px;
+  left: 226px;
+}
+.slider img {
+  width: 196px;
+  height: 196px;
+  border-radius: 8px;
+  position: absolute;
+  top: 20px;
+  left: 15px;
+}
+.slider-button {
+  opacity: 0;
+  border: none;
+  top: 110px;
+  left: 150px;
+  padding: 7px 15px;
+  border-radius: 999px;
+  background-color: white;
+  position: absolute;
+}
+
+.slide:hover .slider-button {
+  opacity: 100;
+}
+
+.slider {
+  animation-name: run;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+@keyframes run {
+  0% {
+    transform: translateX(0px);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
 }
