@@ -6,6 +6,7 @@
 .apple-store {
   width: 100vw;
   position: relative;
+  background-color: #F5F5F7;
 }
 .store-headers {
   width: 100%;
@@ -176,29 +177,88 @@ text-decoration-skip-ink: auto; */
   padding-right: 140px;
   padding-left: 140px;
   text-align: center;
+   flex-direction: column;
+
 }
 .latest-section-title {
   display: flex;
   gap: 4px;
+ 
+  
 }
-.latest-section p:nth-child(2) {
+.latest-section-title p:nth-child(2) {
   font-family: Inter, sans-serif;
   font-weight: 700;
   font-size: 24px;
   line-height: 32px;
   letter-spacing: 0px;
   color: #6e6e73;
+  
 }
 .listDetails {
   display: flex;
+  
 }
 .ListItem {
   width: 480px;
   height: 500px;
   border-radius: 18px;
+  background-size: 480px, 500px;
 }
-
+.ListItems{
+  display: flex;
+  gap: 20px;
+  
+}
+.ListItem{
+  background-size: 480px, 500px;
+}
 #item1 {
   background-image: url(./latest/1.jpeg);
-  background-size: 480px, 500px;
+  /* background-size: 480px, 500px; */
+}
+#item2{
+  background-image: url(./latest/2.jpeg);
+}
+#item3{
+  background-image: url(./latest/3.jpeg);
+}
+.heading3 p{
+  font-family: Inter, sans-serif;
+font-weight: 700;
+font-size: 26px;
+line-height: 32px;
+letter-spacing: 0.2px;
+display: flex;
+flex-direction: column;
+gap: 12px;
+/* padding-left: 8px 16px 8px 16px; */
+}
+.price p{
+  font-family: Inter, sans-serif;
+font-weight: 400;
+font-size: 18px;
+line-height: 20px;
+letter-spacing: 0px;
+vertical-align: middle;
+}
+#price-text-white{
+  font-family: Inter, sans-serif;
+font-weight: 400;
+font-size: 18px;
+line-height: 20px;
+letter-spacing: 0px;
+color: white;
+
+}
+#heading3-white{
+  font-family: Inter, sans-serif;
+font-weight: 700;
+font-size: 26px;
+line-height: 32px;
+letter-spacing: 0.2px;
+display: flex;
+flex-direction: column;
+gap: 12px;
+color: white;
 }
