@@ -170,9 +170,13 @@ text-decoration-skip-ink: auto; */
   vertical-align: middle;
 }
 .frame {
+  width: 100%;
   display: flex;
   flex-direction: column;
   gap: 60px;
+}
+.latest{
+  width: 100%;
 }
 .latest-section {
   width: 100%;
@@ -224,7 +228,9 @@ text-decoration-skip-ink: auto; */
 .ListItems {
   display: flex;
   gap: 20px;
-  overflow: scroll;
+  overflow-x:scroll;
+  /* overflow-x: hidden; */
+  scroll-snap-type:  mandatory;
 }
 
 #item1 {
@@ -319,6 +325,7 @@ text-decoration-skip-ink: auto; */
 .Personalization-section-title {
   display: flex;
   gap: 4px;
+  position: relative;
 }
 .Personalization-section-title p:nth-child(2) {
   font-weight: 700;
@@ -397,14 +404,43 @@ text-decoration-skip-ink: auto; */
   background-image: url(./holiday/store-card-40-holiday-quick-picks-202411.png);
 }
 #Only-at-Apple-item1 {
-  width: 480px;
-  height: 500px;
   background-image: url(./only-at-apple/store-card-50-holiday-delivery-pickup-202411.png);
 }
+
 .Only-at-Apple-item2 {
   width: 313px;
   height: 500px;
   position: relative;
+}
+#Only-at-Apple-item1 p{
+  width: 305px;
+  height: 130px;
+font-weight: 700;
+font-size: 26px;
+line-height: 32px;
+letter-spacing: 0px;
+/* margin-top:30px; */
+/* margin-left: 10px; */
+color: black;
+}
+.only-heading3-1 {
+  width: 305px;
+  height: 130px;
+font-weight: 700;
+font-size: 25px;
+line-height: 32px;
+letter-spacing: 0px;
+/* margin-top:4px;
+margin-left: 30px; */
+}
+.Only-at-Apple-item .ListItem-text p:nth-child(1){
+font-weight: 700;
+font-size: 12px;
+line-height: 16px;
+letter-spacing: 0px;
+color: #6E6E73;
+margin-top:10px;
+/* margin-left: 30px; */
 }
 .Only-at-Apple-item2-ListItem-text {
   width: 313px;
@@ -412,7 +448,7 @@ text-decoration-skip-ink: auto; */
   opacity: 1;
   border-radius: 18px;
   background: #ffffff;
-  box-shadow: 2px 4px 12px 0px #00000014;
+  
 }
 .Only-at-Apple-item2-ListItem-text p {
   font-weight: 700;
@@ -428,7 +464,136 @@ text-decoration-skip-ink: auto; */
   top: 260px;
 }
 #Only-at-Apple-item3 {
-  width: 480px;
-  height: 500px;
   background-image: url(./only-at-apple/store-card-50-holiday-trade-in-202411.png);
+
 }
+#Only-at-Apple-item4{
+   
+  background-image: url(./only-at-apple//7be9e8c4cd1a574c53bacf2396a17f1007bfc091.jpg);
+
+}
+.Only-at-Apple-item{
+   width: 480px;
+  height: 500px;
+  border-radius: 18px;
+  background-size: 480px, 500px;
+  background-position: center;
+  flex-shrink: 0;
+  padding: 30px;
+  row-gap: 20px;
+  scroll-snap-align: start;
+  cursor: pointer;
+  text-align: left;
+  box-shadow: 2px 4px 12px 0px #00000014;
+}
+.The-Apple-Experience-item{
+ width: 480px;
+  height: 500px;
+  border-radius: 18px;
+  background-size: 480px, 500px;
+  background-position: center;
+  flex-shrink: 0;
+  padding: 30px;
+  row-gap: 20px;
+  scroll-snap-align: start;
+  cursor: pointer;
+  text-align: left;
+  box-shadow: 2px 4px 12px 0px #00000014;
+}
+.heading4{
+  width: 98px;
+  height: 14px;
+font-weight: 700;
+font-size: 12px;
+line-height: 16px;
+letter-spacing: 0px;
+color: #6E6E73;
+padding-bottom: 20px;
+
+}
+
+.heading5{
+font-weight: 400;
+font-size: 17px;
+line-height: 20px;
+letter-spacing: 0px;
+width: 259px;
+height: 41px;
+opacity: 1;
+padding-top: 10px;
+}
+.heading6{
+  width: 275px;
+height: 66px;
+
+font-weight: 700;
+font-size: 26px;
+line-height: 32px;
+letter-spacing: 0px;
+
+}
+.The-Apple-Experience-item-heading3{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+ 
+}
+#The-Apple-Experience-item1{
+  background-image: url(./The-Apple-Experience/store-card-50-holiday-apple-music-202411.png);
+}
+#The-Apple-Experience-item2{
+  background-image: url(./The-Apple-Experience/store-card-50-holiday-apple-tv-202411.png);
+}
+.plus{
+  position: absolute;
+  top: 114px;
+  left: 165px;
+}
+.white1{
+  color: #F5F5F7;
+}
+#The-Apple-Experience-item3{
+  background-image: url(./The-Apple-Experience/store-card-50-subscriptions-202108_GEO_US.png);
+}
+#The-Apple-Experience-item4{
+  background-image: url(./The-Apple-Experience/4c93c049459dcec6247af385b50ac485e92e5a45.jpg);
+}
+.heading7{
+  width: 442px;
+height: 66px;
+font-weight: 700;
+font-size: 26px;
+line-height: 32px;
+letter-spacing: 0px;
+padding-top: 20px;
+}
+.heading8{
+  width: 385px;
+height: 96px;
+font-weight: 700;
+font-size: 26px;
+line-height: 32px;
+letter-spacing: 0px;
+padding-top: 20px;
+}
+.heading9{
+  width: 128px;
+height: 16px;
+font-weight: 700;
+font-size: 12px;
+line-height: 16px;
+letter-spacing: 0px;
+}
+#Special-Savings-item1{
+  background-image: url(./Special-saving/store-card-40-refurb-202408.png);
+}
+ #paragraph{ 
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: 0px;
+  color: #6e6e73;
+  position: absolute;
+  left: 0px;
+  padding-top: 10px;
+  }
