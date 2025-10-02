@@ -30,7 +30,6 @@
   position: fixed;
   text-decoration: none;
   z-index: 1;
-  border: 2px green solid;
 }
 .justify-center {
   display: flex;
@@ -140,6 +139,7 @@ text-decoration-skip-ink: auto; */
   padding-right: 140px;
   margin-bottom: 60px;
 }
+
 .list {
   /* width: 136;
   height: 146; */
@@ -175,7 +175,7 @@ text-decoration-skip-ink: auto; */
   flex-direction: column;
   gap: 60px;
 }
-.latest{
+.latest {
   width: 100%;
 }
 .latest-section {
@@ -228,9 +228,9 @@ text-decoration-skip-ink: auto; */
 .ListItems {
   display: flex;
   gap: 20px;
-  overflow-x:scroll;
+  overflow-x: scroll;
   /* overflow-x: hidden; */
-  scroll-snap-type:  mandatory;
+  scroll-snap-type: mandatory;
 }
 
 #item1 {
@@ -412,35 +412,35 @@ text-decoration-skip-ink: auto; */
   height: 500px;
   position: relative;
 }
-#Only-at-Apple-item1 p{
+#Only-at-Apple-item1 p {
   width: 305px;
   height: 130px;
-font-weight: 700;
-font-size: 26px;
-line-height: 32px;
-letter-spacing: 0px;
-/* margin-top:30px; */
-/* margin-left: 10px; */
-color: black;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 32px;
+  letter-spacing: 0px;
+  /* margin-top:30px; */
+  /* margin-left: 10px; */
+  color: black;
 }
 .only-heading3-1 {
   width: 305px;
   height: 130px;
-font-weight: 700;
-font-size: 25px;
-line-height: 32px;
-letter-spacing: 0px;
-/* margin-top:4px;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 32px;
+  letter-spacing: 0px;
+  /* margin-top:4px;
 margin-left: 30px; */
 }
-.Only-at-Apple-item .ListItem-text p:nth-child(1){
-font-weight: 700;
-font-size: 12px;
-line-height: 16px;
-letter-spacing: 0px;
-color: #6E6E73;
-margin-top:10px;
-/* margin-left: 30px; */
+.Only-at-Apple-item .ListItem-text p:nth-child(1) {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0px;
+  color: #6e6e73;
+  margin-top: 10px;
+  /* margin-left: 30px; */
 }
 .Only-at-Apple-item2-ListItem-text {
   width: 313px;
@@ -448,7 +448,6 @@ margin-top:10px;
   opacity: 1;
   border-radius: 18px;
   background: #ffffff;
-  
 }
 .Only-at-Apple-item2-ListItem-text p {
   font-weight: 700;
@@ -465,15 +464,12 @@ margin-top:10px;
 }
 #Only-at-Apple-item3 {
   background-image: url(./only-at-apple/store-card-50-holiday-trade-in-202411.png);
-
 }
-#Only-at-Apple-item4{
-   
+#Only-at-Apple-item4 {
   background-image: url(./only-at-apple//7be9e8c4cd1a574c53bacf2396a17f1007bfc091.jpg);
-
 }
-.Only-at-Apple-item{
-   width: 480px;
+.Only-at-Apple-item {
+  width: 480px;
   height: 500px;
   border-radius: 18px;
   background-size: 480px, 500px;
@@ -486,8 +482,8 @@ margin-top:10px;
   text-align: left;
   box-shadow: 2px 4px 12px 0px #00000014;
 }
-.The-Apple-Experience-item{
- width: 480px;
+.The-Apple-Experience-item {
+  width: 480px;
   height: 500px;
   border-radius: 18px;
   background-size: 480px, 500px;
@@ -500,94 +496,105 @@ margin-top:10px;
   text-align: left;
   box-shadow: 2px 4px 12px 0px #00000014;
 }
-.heading4{
+.heading4 {
   width: 98px;
   height: 14px;
-font-weight: 700;
-font-size: 12px;
-line-height: 16px;
-letter-spacing: 0px;
-color: #6E6E73;
-padding-bottom: 20px;
-
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0px;
+  color: #6e6e73;
+  padding-bottom: 20px;
 }
 
-.heading5{
-font-weight: 400;
-font-size: 17px;
-line-height: 20px;
-letter-spacing: 0px;
-width: 259px;
-height: 41px;
-opacity: 1;
-padding-top: 10px;
+.heading5 {
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 20px;
+  letter-spacing: 0px;
+  width: 259px;
+  height: 41px;
+  opacity: 1;
+  padding-top: 10px;
 }
-.heading6{
+.heading6 {
   width: 275px;
-height: 66px;
+  height: 66px;
 
-font-weight: 700;
-font-size: 26px;
-line-height: 32px;
-letter-spacing: 0px;
-
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 32px;
+  letter-spacing: 0px;
 }
-.The-Apple-Experience-item-heading3{
+.The-Apple-Experience-item-heading3 {
   display: flex;
   flex-direction: column;
   position: relative;
- 
 }
-#The-Apple-Experience-item1{
+#The-Apple-Experience-item1 {
   background-image: url(./The-Apple-Experience/store-card-50-holiday-apple-music-202411.png);
 }
-#The-Apple-Experience-item2{
+#The-Apple-Experience-item2 {
   background-image: url(./The-Apple-Experience/store-card-50-holiday-apple-tv-202411.png);
 }
-.plus{
+.plus {
   position: absolute;
   top: 114px;
   left: 165px;
 }
-.white1{
-  color: #F5F5F7;
+.white1 {
+  color: #f5f5f7;
 }
-#The-Apple-Experience-item3{
+#The-Apple-Experience-item3 {
   background-image: url(./The-Apple-Experience/store-card-50-subscriptions-202108_GEO_US.png);
 }
-#The-Apple-Experience-item4{
+#The-Apple-Experience-item4 {
   background-image: url(./The-Apple-Experience/4c93c049459dcec6247af385b50ac485e92e5a45.jpg);
 }
-.heading7{
+
+.heading7 {
   width: 442px;
-height: 66px;
-font-weight: 700;
-font-size: 26px;
-line-height: 32px;
-letter-spacing: 0px;
-padding-top: 20px;
+  height: 66px;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 32px;
+  letter-spacing: 0px;
+  padding-top: 20px;
 }
-.heading8{
+.heading8 {
   width: 385px;
-height: 96px;
-font-weight: 700;
-font-size: 26px;
-line-height: 32px;
-letter-spacing: 0px;
-padding-top: 20px;
+  height: 96px;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 32px;
+  letter-spacing: 0px;
+  padding-top: 20px;
 }
-.heading9{
+.heading9 {
   width: 128px;
-height: 16px;
-font-weight: 700;
-font-size: 12px;
-line-height: 16px;
-letter-spacing: 0px;
+  height: 16px;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0px;
 }
-#Special-Savings-item1{
+#Special-Savings-item1 {
+  background-image: url(./Special-saving/iphone-card-40-carriertrade-202409.png);
+}
+#Special-Savings-item2 {
+  background-image: url(./Special-saving/store-card-40-bts-edu-macbook-air-ipad-air-202406.png);
+}
+#Special-Savings-item3 {
   background-image: url(./Special-saving/store-card-40-refurb-202408.png);
 }
- #paragraph{ 
+#Special-Savings-item4 {
+  background-image: url(./Special-saving/iphone-card-40-business-202409.png);
+}
+#Special-Savings-item5 {
+  background-image: url(./Special-saving/9511d82e0fa4f14f3d23b485ab3928f9d27a5012.jpg);
+}
+
+#paragraph {
   font-weight: 700;
   font-size: 24px;
   line-height: 32px;
@@ -595,5 +602,74 @@ letter-spacing: 0px;
   color: #6e6e73;
   position: absolute;
   left: 0px;
-  padding-top: 10px;
-  }
+  top: 30px;
+}
+.Special-Savings-ListItems {
+  display: flex;
+  padding-top: 30px;
+  gap: 20px;
+  overflow-x: scroll;
+  /* overflow-x: hidden; */
+  scroll-snap-type: mandatory;
+}
+.Special-Savings-item {
+  width: 400px;
+  height: 500px;
+  border-radius: 18px;
+  background-size: 480px, 500px;
+  background-position: center;
+  flex-shrink: 0;
+  padding: 30px;
+  row-gap: 20px;
+  scroll-snap-align: start;
+  cursor: pointer;
+  text-align: left;
+  box-shadow: 2px 4px 12px 0px #00000014;
+}
+.Special-heading5 {
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 20px;
+  letter-spacing: 0px;
+  /* width: px;
+  height: 50px; */
+  opacity: 1;
+  padding-top: 25px;
+}
+.Special-heading6 {
+  width: 320px;
+  height: 96px;
+
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 32px;
+  letter-spacing: 0px;
+}
+.footer {
+  width: 100%;
+  padding-right: 140px;
+  padding-left: 140px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.link {
+  display: flex;
+  gap: 12px;
+}
+.link-item {
+  border: 1px #1d1d1f solid;
+  padding: 10px 12px 10px 12px;
+  border-radius: 999px;
+  gap: 8px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0px;
+}
+.footer p {
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 32px;
+  letter-spacing: 0px;
+}
