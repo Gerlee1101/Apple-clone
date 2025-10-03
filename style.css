@@ -157,9 +157,9 @@ a {
 }
 .frame12-2 {
   width: 100%;
-  display: flex;
+  /* display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 12px; */
   position: relative;
 }
 .iphone16 {
@@ -180,12 +180,32 @@ a {
 
   /* padding: 12px; */
 }
+.grid-phone .productcontainer {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 12px;
+  border: 2px blue solid;
+
+  /* padding: 12px; */
+}
 .product {
   width: 100%;
   height: 580px;
   position: relative;
   display: flex;
 }
+.phone-product {
+  width: 100%;
+  height: 500px;
+  position: relative;
+  display: flex;
+}
+/* .tablet-product {
+  width: 100%;
+  height: 500px;
+  position: relative;
+  display: flex;
+} */
 #grid-tablet .product {
   width: 100%;
   height: 490px;
@@ -197,7 +217,11 @@ a {
   height: 100%;
   object-fit: cover;
 }
-
+#phone-product img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 .head {
   width: 100%;
   position: absolute;
@@ -234,13 +258,35 @@ a {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  display: inline-block;
+
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
   letter-spacing: 0%;
   position: absolute;
   top: 509px;
+  text-align: center;
+}
+.phone-linear-gradient-HelloAppleIntelligence {
+  width: 100%;
+  color: #0090f7;
+  background-image: linear-gradient(
+    45deg,
+    #0090f7,
+    #ba62fc 60%,
+    #f2416b 90%,
+    #f55600 150%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0%;
+  position: absolute;
+  top: 450px;
   text-align: center;
 }
 .product-bottom {
@@ -349,6 +395,18 @@ a {
   background-size: cover;
   background-repeat: no-repeat;
 }
+.phone-carousel-slide {
+  height: 390px;
+  width: 533px;
+  color: white;
+  flex-shrink: 0;
+  font-size: 17px;
+  position: relative;
+  scroll-snap-align: center;
+  /* background-image: var(--background-image); */
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 .carousel-info {
   left: 47px;
   bottom: 38px;
@@ -357,7 +415,7 @@ a {
 .carousel-info-button {
   border: none;
   cursor: pointer;
-  font-size: 17px;
+  font-size: 14px;
   padding: 11px 21px;
   margin-right: 14px;
   border-radius: 999px;
@@ -400,6 +458,13 @@ a {
   background-size: cover;
 }
 .tablet-slide {
+  width: 286px;
+  height: 161px;
+  flex-shrink: 0;
+  position: relative;
+  background-size: cover;
+}
+.phone-slide {
   width: 286px;
   height: 161px;
   flex-shrink: 0;
@@ -629,75 +694,92 @@ a {
   .tablet-slider {
     display: block;
   }
-}
-
-  
-  .phone-iphone16pro {
-    width: 100vw;
-    position: absolute;
-    top: 350px;
-    color: #f5f5f7;
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-    
-  }
-
- 
-  .phone-title {
-    font-weight: 700;
-    font-size: 30px;
-    line-height: 36px;
-    letter-spacing: 0px;
-    text-align: center;
-    vertical-align: middle;
-    
-  }
-
-  .phone-subtitle {
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 120%;
-    letter-spacing: 0px;
-    text-align: center;
-    vertical-align: middle;
-    gap: 20px;
-    
-  }
-  .phone-button-learnmore-buy {
-    display: flex;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 20px;
-    letter-spacing: -0.37px;
-    gap: 10px;
-  }
-  .phone-button-learnmore {
-    padding: 8px 16px 8px 16px;
-    background-color: #0071e3;
-    border-radius: 999px;
-    color: #ffffff;
-  }
-  .phone-button-buy {
-    padding: 12px 20px 12px 20px;
-    border-radius: 999px;
-    border: 1px #2997ff solid;
-    color: #2997ff;
-    text-align: center;
-  }
-
-  .phone-iphone16 {
-    width: 100vw;
-    position: absolute;
-    top: 55px;
-    gap: 20px;
-    color: #f5f5f7;
-    display: flex;
-    flex-direction: column;
-  }
-  .phone{
+  #phone-image {
     display: none;
   }
+  .phone-linear-gradient-HelloAppleIntelligence {
+    display: none;
+  }
+  .grid-phone {
+    display: none;
+  }
+  .phone-scroll-container {
+    display: none;
+  }
+  .phone-scroll-container {
+    display: none;
+  }
+}
+
+.phone-iphone16pro {
+  width: 100vw;
+  position: absolute;
+  top: 350px;
+  color: #f5f5f7;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.phone-title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  letter-spacing: 0px;
+  text-align: center;
+  vertical-align: middle;
+  display: none;
+}
+
+.phone-subtitle {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 120%;
+  letter-spacing: 0px;
+  text-align: center;
+  vertical-align: middle;
+  gap: 20px;
+  display: none;
+}
+.phone-button-learnmore-buy {
+  display: flex;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: -0.37px;
+  gap: 10px;
+  display: none;
+}
+.phone-button-learnmore {
+  padding: 8px 16px 8px 16px;
+  background-color: #0071e3;
+  border-radius: 999px;
+  color: #ffffff;
+}
+.phone-button-buy {
+  padding: 8px 16px 8px 16px;
+  border-radius: 999px;
+  border: 1px #2997ff solid;
+  color: #2997ff;
+  text-align: center;
+}
+
+.phone-iphone16 {
+  width: 100vw;
+  position: absolute;
+  top: 55px;
+  gap: 20px;
+  color: #f5f5f7;
+  display: flex;
+  flex-direction: column;
+}
+.phone {
+  display: none;
+}
+.list {
+  width: 390px;
+  height: 533px;
+}
 @media (max-width: 479px) {
   .header-menu-icon {
     display: block;
@@ -713,7 +795,7 @@ a {
   #tablet-image {
     display: none;
   }
-   #phone-image {
+  #phone-image {
     width: 100%;
     height: 500px;
     object-fit: cover;
@@ -722,20 +804,50 @@ a {
   .iphone16pro {
     display: none;
   }
- 
+
   .iphone16 {
     display: none;
   }
-   .iphone-title {
+  .iphone-title {
     display: none;
   }
   .iphone-subtitle {
     display: none;
   }
-  .tablet{
+  .tablet {
     display: none;
   }
-  .phone{
+  .phone {
+    display: block;
+  }
+  .phone-title {
+    display: block;
+  }
+  .phone-subtitle {
+    display: block;
+  }
+  .phone-button-learnmore-buy {
+    display: block;
+  }
+  .linear-gradient-HelloAppleIntelligence {
+    display: none;
+  }
+  .phone-linear-gradient-HelloAppleIntelligence {
+    display: block;
+  }
+  .phone .phone-title-image img {
+    display: block;
+  }
+  .grid-tablet {
+    display: none;
+  }
+  .grid-phone {
+    display: block;
+  }
+  .tablet-scroll-container {
+    display: none;
+  }
+  .phone-scroll-container {
     display: block;
   }
 }
