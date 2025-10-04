@@ -365,10 +365,11 @@ a {
   display: flex;
   column-gap: 16px;
   overflow: scroll;
-  align-items: center;
+  /* align-items: center; */
   scrollbar-width: none;
   scroll-behavior: smooth;
-  scroll-snap-type: mandatory;
+  scroll-snap-type: x mandatory;
+  
 }
 
 .carousel-slide {
@@ -395,9 +396,10 @@ a {
   background-size: cover;
   background-repeat: no-repeat;
 }
+
 .phone-carousel-slide {
-  height: 390px;
-  width: 533px;
+  height: 495px;
+  width: 274px;
   color: white;
   flex-shrink: 0;
   font-size: 17px;
@@ -405,7 +407,10 @@ a {
   scroll-snap-align: center;
   /* background-image: var(--background-image); */
   background-size: cover;
+ background-position: center;
   background-repeat: no-repeat;
+  
+ 
 }
 .carousel-info {
   left: 47px;
@@ -428,6 +433,7 @@ a {
 .tablet-bullets {
   display: none;
 }
+
 .bullet {
   width: 8px;
   height: 8px;
@@ -446,9 +452,44 @@ a {
   height: 236px;
   display: flex;
   column-gap: 16px;
+  row-gap: 10px;
+}
+.web-slider{
+  width: 100%;
+ height: fit-content;
+  position: relative;
+}
+.button-play{
+  width: fit-content;
+  height:fit-content;
+  position: absolute;
+  top: 252px;
+  right: 20px;
+  padding-bottom: 10px;
+}
+.tablet-button-play{
+  width: fit-content;
+  height:fit-content;
+  position: absolute;
+  top: 210px;
+  right: 20px;
+  padding-bottom: 10px;
+  display: none;
+}
+.button img{
+  width: 24px;
+  height: 24px;
+  right: 20px;
 }
 .tablet-slider {
   display: none;
+}
+.tablet-slider{
+  width: 100%;
+ height: fit-content;
+  position: relative;
+  
+  
 }
 .slide {
   width: 417px;
@@ -601,10 +642,25 @@ a {
 .grid-tablet {
   display: none;
 }
+
 .tablet-scroll-container {
   display: none;
 }
 #phone-image {
+  display: none;
+}
+ 
+  .phone-linear-gradient-HelloAppleIntelligence {
+    display: none;
+  }
+  .grid-phone {
+    display: none;
+  }
+  .phone-scroll-container {
+    display: none;
+  }
+  
+  .phone-bullets {
   display: none;
 }
 #phone-title {
@@ -688,10 +744,13 @@ a {
   .tablet-bullets {
     display: block;
   }
-  #web-slider {
+  .web-slider {
     display: none;
   }
   .tablet-slider {
+    display: block;
+  }
+  .tablet-scroll-container {
     display: block;
   }
   #phone-image {
@@ -706,9 +765,16 @@ a {
   .phone-scroll-container {
     display: none;
   }
-  .phone-scroll-container {
-    display: none;
-  }
+  
+  .phone-bullets {
+  display: none;
+}
+.button-play{
+  display: none;
+}
+.tablet-button-play{
+  display: block;
+}
 }
 
 .phone-iphone16pro {
@@ -847,7 +913,13 @@ a {
   .tablet-scroll-container {
     display: none;
   }
+  .tablet-bullets{
+    display: none;
+  }
   .phone-scroll-container {
     display: block;
   }
+  .phone-bullets {
+  display: block;
+}
 }
